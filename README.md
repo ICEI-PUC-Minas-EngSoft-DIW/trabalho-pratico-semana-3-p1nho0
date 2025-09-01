@@ -16,9 +16,9 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Print do(s) wireframe(s) criado
 
-![Print do sistema](https://www.figma.com/design/etGAtTeLo1cx7MEQupHSQX/Pessoas-e-Produ%C3%A7%C3%B5es?node-id=0-1&t=fobpsfHwy0ycdwqt-1)
+![Wireframe feito no figma](https://www.figma.com/design/etGAtTeLo1cx7MEQupHSQX/Pessoas-e-Produ%C3%A7%C3%B5es?node-id=0-1&t=fobpsfHwy0ycdwqt-1)
 
 
 ## Print da home-page criada
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print] (fotos/homepage.png)

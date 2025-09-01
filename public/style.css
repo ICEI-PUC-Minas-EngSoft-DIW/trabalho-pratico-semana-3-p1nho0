@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 /* Header */
@@ -19,6 +20,11 @@ header {
     padding: 20px;
     background-color: #222;
     color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 header nav ul {
@@ -33,13 +39,29 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: white;
+    transition: color 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #6a11cb;
 }
 
 /* Banner */
 .banner {
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
 }
 
 /* Seção de artistas e obras */
@@ -47,10 +69,25 @@ section {
     padding: 40px 20px;
 }
 
+.artistas, .obras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .artista-card, .obra-card {
-    display: inline-block;
-    margin-right: 20px;
     text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 180px;
+}
+
+.artista-card:hover, .obra-card:hover {
+    transform: scale(1.05);
 }
 
 .artista-card img, .obra-card img {
@@ -58,6 +95,7 @@ section {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -67,4 +105,30 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+footer a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .artistas, .obras {
+        flex-direction: column;
+        align-items: center;
+    }
 }
